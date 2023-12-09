@@ -130,7 +130,7 @@ async def help(ctx):
 		
 		await ctx.reply(embed=embeds)
 	else:
-		embed = discord.Embed(title=" **TEAM ATK** ",, description="[?]¨ **HELP MENU [?]¨", color=discord.Colour.random())
+		embed = discord.Embed(title=" **TEAM ATK** ", description="[?]¨ **HELP MENU [?]¨", color=discord.Colour.random())
 		embed.set_author(name="Team ATK Bot V1", icon_url="https://media2.giphy.com/media/F2U5dFf4LG1zYmnJS2/giphy.gif")
 		embed.add_field(name="**User_info**", value="`View User Information`")
 		embed.add_field(name="**Bot_info**", value="`View Bot Information`")
