@@ -13,7 +13,7 @@ from discord.ext import commands
 from re import search
 import threading
 import psutil
-token = "MTExODE2OTMxNTU3Mzc4MDUzMA.GTJ8eI.s3XoeVedRQw2_FGOZwrYI0JSrEhuM6ZB8FSbO4"
+token = "MTE4MjkyODU3ODU5MDAzMTkwMg.G5WjsJ.cR0C-JE8nAmIOJClap5XL4JJwQw_UugpcZh2uQ"
 buyers = [1101027355696304128]
 admins = [1101027355696304128]
 ownerList = [1101027355696304128]
@@ -125,19 +125,19 @@ async def help(ctx):
 	if ctx.author.id not in buyers:
 		embeds = discord.Embed(title=" **TEAM ATK** ", color=0xfcb103)
 		embeds.add_field(name="**Warning**",value="You Don't Have Permission To Use This Command !")
-		embeds.set_footer(text=f"© Owner : CofZZ & Asep | {ctx.author.name}")
+		embeds.set_footer(text=f"Â© Owner : CofZZ & Asep | {ctx.author.name}")
 		
 		
 		await ctx.reply(embed=embeds)
 	else:
-		embed = discord.Embed(title=" **TEAM ATK** ",, description="[?]� **HELP MENU [?]�", color=discord.Colour.random())
+		embed = discord.Embed(title=" **TEAM ATK** ",, description="[?]¨ **HELP MENU [?]¨", color=discord.Colour.random())
 		embed.set_author(name="Team ATK Bot V1", icon_url="https://media2.giphy.com/media/F2U5dFf4LG1zYmnJS2/giphy.gif")
 		embed.add_field(name="**User_info**", value="`View User Information`")
 		embed.add_field(name="**Bot_info**", value="`View Bot Information`")
 		embed.add_field(name="**Ping**", value="`Ping Website Status`")
 		embed.add_field(name="**Methods**", value="`Show All Methods DDoS`")
 		embed.add_field(name="**Commands**",value="`Show All Commands To DDoS`")
-		embed.set_footer(text=f"© Owner : CofZZ & Asep | Requests By {ctx.author.name}")
+		embed.set_footer(text=f"Â© Owner : CofZZ & Asep | Requests By {ctx.author.name}")
 		
 		await ctx.send(embed=embed)
 	
@@ -156,7 +156,7 @@ async def Userinfo(ctx, user:discord.Member=None):
 	embed.add_field(name="Created at :", value=user.created_at)
 	embed.add_field(name="Joined at :", value=user.joined_at)
 	embed.add_field(name="Bot ?", value=user.bot)
-	embed.set_footer(text=f"© Owner : CofZZ & Asep | Info User : {user}", icon_url=ctx.author.avatar)
+	embed.set_footer(text=f"Â© Owner : CofZZ & Asep | Info User : {user}", icon_url=ctx.author.avatar)
 	
 	await ctx.send(embed=embed)
 	
@@ -169,7 +169,7 @@ async def vpsinfo(ctx):
 	embed.add_field(name="Total RAM GB", value=round(psutil.virtual_memory()[0]/2**30, 2))
 	embed.add_field(name="RAM Usage %:", value=psutil.virtual_memory()[2])
 	embed.add_field(name="CPU Usage %:", value=psutil.cpu_percent(1))
-	embed.set_footer(text="© Owner : CofZZ & Asep | Info Bot :  Atk Team ", icon_url=ctx.author.avatar)
+	embed.set_footer(text="Â© Owner : CofZZ & Asep | Info Bot :  Atk Team ", icon_url=ctx.author.avatar)
 	
 	await ctx.send(embed=embed)	
 	
@@ -184,7 +184,7 @@ async def Botinfo(ctx):
 	embed.add_field(name="Bot Owner :", value="CofZZ & Asep")
 	embed.add_field(name="Function :", value="DDoS Attack")
 	embed.add_field(name="Bot ?", value="True")
-	embed.set_footer(text="© Owner : CofZZ & Asep | Info Bot :  AtK Team ", icon_url=ctx.author.avatar)
+	embed.set_footer(text="Â© Owner : CofZZ & Asep | Info Bot :  AtK Team ", icon_url=ctx.author.avatar)
 	
 	await ctx.send(embed=embed)
 	
@@ -232,13 +232,13 @@ async def Methods(ctx):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embet = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
 		embet.add_field(name="**Methods Layer4**", value="```Update```")
 		embet.add_field(name="**Methods Layer7**", value="```\nSLOW\nHYPER\nUAM\nUAM-BYPASS\nHTTP-RAW\nHTTP-RAND\nHTTP-SOCKETS\nIO-STRESSER\nCLOUDFLARE\nCF-BYPASS\nVLM```")
-		embet.set_footer(text=f"© Owner : CofZZ & Asep | All Methods Show")
+		embet.set_footer(text=f"Â© Owner : CofZZ & Asep | All Methods Show")
 		
 		await ctx.channel.send(embed=embet)
 	
@@ -253,7 +253,7 @@ async def Commands(ctx):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
@@ -269,7 +269,7 @@ async def Commands(ctx):
 		embed.add_field(name="**CLOUDFLARE**", value="```!CF [url] [time] [thread]```")
 		embed.add_field(name="**CF-BYPASS**", value="```!CF_BYPASS [url] [thread<50] [time]```")
 		embed.add_field(name="**VLM**", value="```!VLM [url] [get/post]```")
-		embed.set_footer(text="© Owner : CofZZ & Asep | All Methods Command", icon_url=ctx.author.avatar)
+		embed.set_footer(text="Â© Owner : CofZZ & Asep | All Methods Command", icon_url=ctx.author.avatar)
 		
 		await ctx.send(embed=embed)
 		
@@ -284,7 +284,7 @@ async def SLOW(ctx, url, time):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
@@ -295,7 +295,7 @@ async def SLOW(ctx, url, time):
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		embed.set_footer(text=f"Â© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
 		
 		
 		await ctx.send(embed=embed)
@@ -313,7 +313,7 @@ async def HYPER(ctx, url, time):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
@@ -324,7 +324,7 @@ async def HYPER(ctx, url, time):
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		embed.set_footer(text=f"Â© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
 		
 		
 		await ctx.send(embed=embed)
@@ -341,7 +341,7 @@ async def UAM(ctx, url, thread, time, mthd):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
@@ -353,7 +353,7 @@ async def UAM(ctx, url, thread, time, mthd):
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		embed.set_footer(text=f"Â© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
 		
 		
 		await ctx.send(embed=embed)
@@ -371,7 +371,7 @@ async def UAM_BYPASS(ctx, url, time, req):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
@@ -383,7 +383,7 @@ async def UAM_BYPASS(ctx, url, time, req):
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		embed.set_footer(text=f"Â© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
 		
 		
 		await ctx.send(embed=embed)
@@ -397,7 +397,7 @@ async def HTTP_RAW(ctx, url, time):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
@@ -408,7 +408,7 @@ async def HTTP_RAW(ctx, url, time):
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		embed.set_footer(text=f"Â© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
 		
 		await ctx.send(embed=embed)
 		
@@ -423,7 +423,7 @@ async def HTTP_RAND(ctx, url, time):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
@@ -434,7 +434,7 @@ async def HTTP_RAND(ctx, url, time):
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		embed.set_footer(text=f"Â© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
 		
 		await ctx.send(embed=embed)
 		
@@ -449,7 +449,7 @@ async def HTTP_SOCKETS(ctx, url, req, time):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
@@ -461,7 +461,7 @@ async def HTTP_SOCKETS(ctx, url, req, time):
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		embed.set_footer(text=f"Â© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
 		
 		
 		await ctx.send(embed=embed)
@@ -476,7 +476,7 @@ async def IO_STRESSER(ctx, url, time, thread, mthd):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
@@ -488,7 +488,7 @@ async def IO_STRESSER(ctx, url, time, thread, mthd):
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		embed.set_footer(text=f"Â© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
 		
 		
 		await ctx.send(embed=embed)
@@ -502,7 +502,7 @@ async def CF(ctx, url, time, thread):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
@@ -514,7 +514,7 @@ async def CF(ctx, url, time, thread):
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		embed.set_footer(text=f"Â© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
 		
 		
 		await ctx.send(embed=embed)
@@ -527,7 +527,7 @@ async def CF_BYPASS(ctx, url, thread, time):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
@@ -539,7 +539,7 @@ async def CF_BYPASS(ctx, url, thread, time):
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		embed.set_footer(text=f"Â© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
 		
 		
 		await ctx.send(embed=embed)
@@ -553,7 +553,7 @@ async def VLM(ctx, url, mthd):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		embedc.set_footer(text=f"Â© Owner : CofZZ & Asep | Warning {ctx.author.name}")
 		await ctx.reply(embed=embedc)
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
@@ -564,7 +564,7 @@ async def VLM(ctx, url, mthd):
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"© Owner : CofZZ & Asep | {ctx.author.name}", icon_url=ctx.author.avatar)
+		embed.set_footer(text=f"Â© Owner : CofZZ & Asep | {ctx.author.name}", icon_url=ctx.author.avatar)
 		
 		
 		await ctx.send(embed=embed)
