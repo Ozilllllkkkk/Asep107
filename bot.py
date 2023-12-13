@@ -1,3 +1,5 @@
+# coding: iso-8859-1 -*-
+# -*- encoding: utf-8 -*-
 import discord,time
 from discord import File
 from ping3 import ping
@@ -13,7 +15,7 @@ from discord.ext import commands
 from re import search
 import threading
 import psutil
-token = "MTExODE2OTMxNTU3Mzc4MDUzMA.GcVu_M.MZ1iJ79MokoYKz0irRC6q83Our22sQkPsRWP44"
+token = "MTExODE2OTMxNTU3Mzc4MDUzMA.GVi2Az.NckX9Fw2CdANT2ptu__qMsUYdif9PrAzbAc4GU"
 buyers = [1101027355696304128, 1137003715656687656]
 admins = [1101027355696304128, 1137003715656687656]
 ownerList = [1101027355696304128, 1137003715656687656]
